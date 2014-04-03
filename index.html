@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>LIGHTBOX EXAMPLE</title>
+		<script src="lightbox.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class= "images">
+		<a href = "javascript:showLight(0)"><img id="imgsrc0" class = "thumb" src='BSDThumb.jpg'></a>
+		<a href = "javascript:showLight(1)"><img id="imgsrc1" class = "thumb" src='AppleThumb.jpg'></a>
+		<a href = "javascript:showLight(2)"><img id="imgsrc2" class = "thumb" src='LinuxThumb.jpg'></a>
+		<a href = "javascript:showLight(3)"><img id="imgsrc3" class = "thumb" src='WindowsThumb.jpg'></a>
+		</div>		
+		
+		   
+    	<div id="light" class="light_content">
+			<div id="wrapper">
+   				<!-- Begin Header -->
+				<div id="header">
+					<div class="leftCol">
+					</div>
+
+					<div class="rightCol">
+						<a href = "JavaScript:hideLight()" >Close</a>
+					</div>
+				</div>
+				<!-- End Header -->
+				<div id="content">
+						<img class="fullSize" src="BSD.jpg" name="slideImage">						
+		 		</div>
+				<!-- End Content -->
+				
+				<!-- Begin Footer -->
+				<div id="footer">
+					<div class="leftCol">
+						<a href = "JavaScript:previousImage()" ><<</a>
+					</div>
+
+					<div class="rightCol">
+						<a href = "JavaScript:nextImage()" >>></a>
+					</div>
+				</div>
+				<!-- End Footer -->
+		 
+			</div>
+			<!-- End Wrapper -->
+		</div>	
+		<div id="fade" class="black_overlay">
+		</div>
+	
+	</body>
+</html>
